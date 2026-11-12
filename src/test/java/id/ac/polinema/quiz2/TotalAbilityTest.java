@@ -17,7 +17,7 @@ class TotalAbilityTest {
         orders.add(new TestSupport.TestAbilityOrder("L2", 3));
         orders.add(new TestSupport.TestAbilityOrder("L3", 1));
         assertEquals(1000.0, OrderCalculator.totalDelivery(orders), 0.001,
-                "Periksa dengan instanceof Deliverable, lalu jumlahkan deliveryFee() (Pertemuan 10: instanceof)");
+                "Periksa dengan instanceof Deliverable, lalu jumlahkan deliveryFee()");
     }
 
     @Test

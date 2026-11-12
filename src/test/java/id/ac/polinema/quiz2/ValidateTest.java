@@ -13,7 +13,7 @@ class ValidateTest {
     @DisplayName("validate melempar InvalidWeightException untuk berat 0 atau negatif")
     void throwsForZeroOrNegative() {
         assertThrows(InvalidWeightException.class, () -> OrderCalculator.validate(new TestSupport.TestOrder("L1", 0)),
-                "berat 0 tidak valid: lempar InvalidWeightException (Pertemuan 10: throw)");
+                "berat 0 tidak valid: lempar InvalidWeightException");
         assertThrows(InvalidWeightException.class, () -> OrderCalculator.validate(new TestSupport.TestOrder("L1", -2)),
                 "berat negatif tidak valid: lempar InvalidWeightException");
     }

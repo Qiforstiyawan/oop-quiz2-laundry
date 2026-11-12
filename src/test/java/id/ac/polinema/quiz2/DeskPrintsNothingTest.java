@@ -20,6 +20,6 @@ class DeskPrintsNothingTest {
         assertEquals(1, printer.ids.size(),
                 "checkout harus menyerahkan pekerjaan mencetak ke ReceiptPrinter (tidak boleh dibiarkan kosong)");
         assertEquals("", output,
-                "LaundryDesk tidak boleh memakai System.out: tugas mencetak milik ReceiptPrinter (Pertemuan 11: SRP, satu kelas satu tanggung jawab)");
+                "LaundryDesk tidak boleh memakai System.out: tugas mencetak milik ReceiptPrinter");
     }
 }

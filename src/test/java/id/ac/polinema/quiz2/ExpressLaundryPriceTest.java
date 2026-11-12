@@ -12,7 +12,7 @@ class ExpressLaundryPriceTest {
     void priceIsMeasureTimesRate() throws Throwable {
         LaundryOrder order = TestSupport.newStudentOrder("ExpressLaundry", "L1", 5);
         assertEquals(5 * 9000.0, order.calculatePrice(), 0.001,
-                "ExpressLaundry: 5 kg harus Rp 9.000 per kg x 5 (Pertemuan 7: override method)");
+                "ExpressLaundry: 5 kg harus Rp 9.000 per kg x 5");
     }
 
     @Test

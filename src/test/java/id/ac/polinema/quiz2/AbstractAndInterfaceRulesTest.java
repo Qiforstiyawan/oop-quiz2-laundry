@@ -14,7 +14,7 @@ class AbstractAndInterfaceRulesTest {
     @DisplayName("LaundryOrder tetap kelas abstrak")
     void baseStaysAbstract() {
         assertTrue(Modifier.isAbstract(LaundryOrder.class.getModifiers()),
-                "LaundryOrder harus tetap abstract: objek pesanan laundry umum tidak masuk akal (Pertemuan 9)");
+                "LaundryOrder harus tetap abstract: objek pesanan laundry umum tidak masuk akal");
     }
 
     @Test
@@ -22,7 +22,7 @@ class AbstractAndInterfaceRulesTest {
     void abilityIsSmallInterface() {
         assertTrue(Deliverable.class.isInterface(), "Deliverable harus tetap interface");
         assertEquals(1, Deliverable.class.getDeclaredMethods().length,
-                "Deliverable harus kecil dan fokus: satu method saja (Pertemuan 11: ISP)");
+                "Deliverable harus kecil dan fokus: satu method saja");
     }
 
     @Test
@@ -30,7 +30,7 @@ class AbstractAndInterfaceRulesTest {
     void sub1DoesNotImplementAbility() throws Throwable {
         LaundryOrder order = TestSupport.newStudentOrder("RegularLaundry", "L1", 3);
         assertFalse(order instanceof Deliverable,
-                "RegularLaundry tidak punya antar-jemput, jadi tidak boleh implements Deliverable (Pertemuan 11: ISP)");
+                "RegularLaundry tidak punya antar-jemput, jadi tidak boleh implements Deliverable");
     }
 
     @Test

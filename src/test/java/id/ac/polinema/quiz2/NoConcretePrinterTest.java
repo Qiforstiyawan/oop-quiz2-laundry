@@ -15,7 +15,7 @@ class NoConcretePrinterTest {
     void noConcreteField() {
         for (Field f : LaundryDesk.class.getDeclaredFields()) {
             assertFalse(ConsoleReceiptPrinter.class.isAssignableFrom(f.getType()),
-                    "Field '" + f.getName() + "' tidak boleh bertipe ConsoleReceiptPrinter: pakai interface ReceiptPrinter (Pertemuan 11: DIP)");
+                    "Field '" + f.getName() + "' tidak boleh bertipe ConsoleReceiptPrinter: pakai interface ReceiptPrinter");
         }
     }
 

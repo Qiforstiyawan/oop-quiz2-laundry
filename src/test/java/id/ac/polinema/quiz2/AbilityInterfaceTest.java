@@ -13,7 +13,7 @@ class AbilityInterfaceTest {
     void sub2ImplementsAbility() throws Throwable {
         LaundryOrder order = TestSupport.newStudentOrder("ExpressLaundry", "L1", 4);
         assertTrue(order instanceof Deliverable,
-                "ExpressLaundry harus implements Deliverable (Pertemuan 9: interface untuk kemampuan tambahan)");
+                "ExpressLaundry harus implements Deliverable");
     }
 
     @Test

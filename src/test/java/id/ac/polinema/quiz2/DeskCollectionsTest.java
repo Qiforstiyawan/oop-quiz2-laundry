@@ -21,7 +21,7 @@ class DeskCollectionsTest {
                 found = true;
             }
         }
-        assertTrue(found, "Simpan pesanan laundry di field bertipe List, misalnya ArrayList (Pertemuan 11)");
+        assertTrue(found, "Simpan pesanan laundry di field bertipe List, misalnya ArrayList");
     }
 
     @Test
@@ -33,7 +33,7 @@ class DeskCollectionsTest {
                 found = true;
             }
         }
-        assertTrue(found, "Cari pesanan laundry lewat kode memakai field bertipe Map (Pertemuan 11)");
+        assertTrue(found, "Cari pesanan laundry lewat kode memakai field bertipe Map");
     }
 
     @Test

@@ -19,7 +19,7 @@ class NewSubclassNoChangeTest {
         LaundryOrder fresh = new TestSupport.PremiumLaundry("N1", 2);
         desk.add(fresh);
         assertSame(fresh, desk.findById("N1"),
-                "Jenis baru harus bisa disimpan dan ditemukan tanpa mengubah LaundryDesk (Pertemuan 11: OCP)");
+                "Jenis baru harus bisa disimpan dan ditemukan tanpa mengubah LaundryDesk");
     }
 
     @Test

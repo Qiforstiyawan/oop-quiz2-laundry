@@ -19,7 +19,7 @@ class DeskInterfaceTest {
             }
         }
         assertTrue(found,
-                "Simpan objek dari constructor di field bertipe ReceiptPrinter (interface), bukan ConsoleReceiptPrinter (Pertemuan 11: DIP)");
+                "Simpan objek dari constructor di field bertipe ReceiptPrinter (interface), bukan ConsoleReceiptPrinter");
     }
 
     @Test

@@ -20,7 +20,7 @@ class IsAcceptableTest {
     @DisplayName("isAcceptable bernilai false (bukan melempar) untuk berat tidak valid")
     void falseWhenInvalid() {
         assertFalse(OrderCalculator.isAcceptable(new TestSupport.TestOrder("L1", 0)),
-                "Tangkap InvalidWeightException dengan catch lalu kembalikan false (Pertemuan 10: try/catch)");
+                "Tangkap InvalidWeightException dengan catch lalu kembalikan false");
         assertFalse(OrderCalculator.isAcceptable(new TestSupport.TestOrder("L1", 20 + 0.5)),
                 "berat di atas 20 kg harus menghasilkan false");
     }

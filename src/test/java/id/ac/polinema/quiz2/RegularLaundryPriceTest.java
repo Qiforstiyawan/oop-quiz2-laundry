@@ -12,7 +12,7 @@ class RegularLaundryPriceTest {
     void priceIsMeasureTimesRate() throws Throwable {
         LaundryOrder order = TestSupport.newStudentOrder("RegularLaundry", "L1", 5);
         assertEquals(5 * 6000.0, order.calculatePrice(), 0.001,
-                "RegularLaundry: 5 kg harus Rp 6.000 per kg x 5 (Pertemuan 7: override method)");
+                "RegularLaundry: 5 kg harus Rp 6.000 per kg x 5");
     }
 
     @Test

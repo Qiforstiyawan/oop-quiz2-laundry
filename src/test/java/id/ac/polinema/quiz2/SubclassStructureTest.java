@@ -16,7 +16,7 @@ class SubclassStructureTest {
     void sub1ExtendsBase() {
         Class<?> c = TestSupport.loadClass("RegularLaundry");
         assertTrue(LaundryOrder.class.isAssignableFrom(c) && c != LaundryOrder.class,
-                "RegularLaundry harus extends LaundryOrder (Pertemuan 9: kelas abstrak, subclass mengisi method abstrak)");
+                "RegularLaundry harus extends LaundryOrder");
     }
 
     @Test
@@ -24,7 +24,7 @@ class SubclassStructureTest {
     void sub2ExtendsBase() {
         Class<?> c = TestSupport.loadClass("ExpressLaundry");
         assertTrue(LaundryOrder.class.isAssignableFrom(c) && c != LaundryOrder.class,
-                "ExpressLaundry harus extends LaundryOrder (Pertemuan 9: kelas abstrak, subclass mengisi method abstrak)");
+                "ExpressLaundry harus extends LaundryOrder");
     }
 
     @Test
@@ -41,7 +41,7 @@ class SubclassStructureTest {
     void constructorPassesToSuper() throws Throwable {
         LaundryOrder a = TestSupport.newStudentOrder("RegularLaundry", "L1", 5);
         LaundryOrder b = TestSupport.newStudentOrder("ExpressLaundry", "L2", 3);
-        assertEquals("L1", a.getOrderId(), "Panggil super(...) di constructor RegularLaundry (Pertemuan 6: super)");
-        assertEquals(3.0, b.getWeightKg(), 0.001, "Panggil super(...) di constructor ExpressLaundry (Pertemuan 6: super)");
+        assertEquals("L1", a.getOrderId(), "Panggil super(...) di constructor RegularLaundry");
+        assertEquals(3.0, b.getWeightKg(), 0.001, "Panggil super(...) di constructor ExpressLaundry");
     }
 }
