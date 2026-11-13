@@ -11,23 +11,26 @@ package id.ac.polinema.quiz2;
  * Semua field harus private.
  */
 public class Customer {
+    private String customerId;
+    private String name;
 
     /**
      * Menyimpan kedua parameter ke field.
      *
      * @param customerId kode pelanggan
-     * @param name nama pelanggan
+     * @param name       nama pelanggan
      */
     public Customer(String customerId, String name) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        this.customerId = customerId;
+        this.name = name;
     }
 
     public String getCustomerId() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return customerId;
     }
 
     public String getName() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return name;
     }
 
     /**
@@ -37,6 +40,8 @@ public class Customer {
      * @param name nama baru
      */
     public void setName(String name) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (name != null && !name.isBlank()) {
+            this.name = name;
+        }
     }
 }
