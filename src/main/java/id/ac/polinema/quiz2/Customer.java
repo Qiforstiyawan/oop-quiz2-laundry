@@ -14,12 +14,6 @@ public class Customer {
     private String customerId;
     private String name;
 
-    /**
-     * Menyimpan kedua parameter ke field.
-     *
-     * @param customerId kode pelanggan
-     * @param name       nama pelanggan
-     */
     public Customer(String customerId, String name) {
         this.customerId = customerId;
         this.name = name;
@@ -33,12 +27,6 @@ public class Customer {
         return name;
     }
 
-    /**
-     * Mengubah nama. Nama yang null atau kosong (hanya spasi) tidak valid:
-     * abaikan dan biarkan nama lama tetap.
-     *
-     * @param name nama baru
-     */
     public void setName(String name) {
         if (name != null && !name.isBlank()) {
             this.name = name;
